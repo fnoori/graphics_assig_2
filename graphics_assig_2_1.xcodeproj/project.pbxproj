@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EA9A34B82023B72F00E7C8E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9A34B72023B72F00E7C8E7 /* main.cpp */; };
+		EA9A34C62023B84600E7C8E7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9A34C52023B84600E7C8E7 /* OpenGL.framework */; };
+		EA9A34C82023B85D00E7C8E7 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9A34C72023B85D00E7C8E7 /* libglfw.3.2.dylib */; };
+		EA9A38542024BA1400E7C8E7 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9A37302024BA1300E7C8E7 /* texture.cpp */; };
+		EA9A38572024BA1400E7C8E7 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = EA9A384C2024BA1400E7C8E7 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA0FD8DB2027E5FF00F9EF39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA30939E2027E30700C55B8F /* image2-uclogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image2-uclogo.png"; sourceTree = "<group>"; };
+		EA30939F2027E30700C55B8F /* image3-aerial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image3-aerial.jpg"; sourceTree = "<group>"; };
+		EA3093A02027E30700C55B8F /* image4-thirsk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image4-thirsk.jpg"; sourceTree = "<group>"; };
+		EA3093A22027E30700C55B8F /* image5-pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image5-pattern.png"; sourceTree = "<group>"; };
 		EA9A34B42023B72F00E7C8E7 /* graphics_assig_2_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = graphics_assig_2_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9A34B72023B72F00E7C8E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EA9A34C52023B84600E7C8E7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EA9A34C72023B85D00E7C8E7 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		EA9A372C2024BA1300E7C8E7 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		EA9A372E2024BA1300E7C8E7 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		EA9A372F2024BA1300E7C8E7 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		EA9A37302024BA1300E7C8E7 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		EA9A38482024BA1400E7C8E7 /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
+		EA9A384A2024BA1400E7C8E7 /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
+		EA9A384C2024BA1400E7C8E7 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		EAD85161202BD959009F4783 /* image6-Banff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image6-Banff.jpg"; sourceTree = "<group>"; };
+		EAD85162202BE296009F4783 /* image1-mandrill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image1-mandrill.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9A34C82023B85D00E7C8E7 /* libglfw.3.2.dylib in Frameworks */,
+				EA9A34C62023B84600E7C8E7 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +65,7 @@
 			children = (
 				EA9A34B62023B72F00E7C8E7 /* graphics_assig_2_1 */,
 				EA9A34B52023B72F00E7C8E7 /* Products */,
+				EA9A34C42023B84600E7C8E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +80,96 @@
 		EA9A34B62023B72F00E7C8E7 /* graphics_assig_2_1 */ = {
 			isa = PBXGroup;
 			children = (
+				EA9A38592024BB1F00E7C8E7 /* res */,
+				EA9A37312024BA1300E7C8E7 /* middleware */,
+				EA9A372D2024BA1300E7C8E7 /* shaders */,
+				EA9A37302024BA1300E7C8E7 /* texture.cpp */,
+				EA9A372C2024BA1300E7C8E7 /* texture.h */,
 				EA9A34B72023B72F00E7C8E7 /* main.cpp */,
+				EA0FD8DB2027E5FF00F9EF39 /* README.md */,
 			);
 			path = graphics_assig_2_1;
+			sourceTree = "<group>";
+		};
+		EA9A34C42023B84600E7C8E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A34C72023B85D00E7C8E7 /* libglfw.3.2.dylib */,
+				EA9A34C52023B84600E7C8E7 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA9A372D2024BA1300E7C8E7 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A372E2024BA1300E7C8E7 /* fragment.glsl */,
+				EA9A372F2024BA1300E7C8E7 /* vertex.glsl */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		EA9A37312024BA1300E7C8E7 /* middleware */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A38452024BA1400E7C8E7 /* glad */,
+			);
+			path = middleware;
+			sourceTree = "<group>";
+		};
+		EA9A38452024BA1400E7C8E7 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A38462024BA1400E7C8E7 /* include */,
+				EA9A384B2024BA1400E7C8E7 /* src */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		EA9A38462024BA1400E7C8E7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A38472024BA1400E7C8E7 /* KHR */,
+				EA9A38492024BA1400E7C8E7 /* glad */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EA9A38472024BA1400E7C8E7 /* KHR */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A38482024BA1400E7C8E7 /* khrplatform.h */,
+			);
+			path = KHR;
+			sourceTree = "<group>";
+		};
+		EA9A38492024BA1400E7C8E7 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A384A2024BA1400E7C8E7 /* glad.h */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		EA9A384B2024BA1400E7C8E7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA9A384C2024BA1400E7C8E7 /* glad.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA9A38592024BB1F00E7C8E7 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				EAD85162202BE296009F4783 /* image1-mandrill.png */,
+				EAD85161202BD959009F4783 /* image6-Banff.jpg */,
+				EA30939E2027E30700C55B8F /* image2-uclogo.png */,
+				EA30939F2027E30700C55B8F /* image3-aerial.jpg */,
+				EA3093A02027E30700C55B8F /* image4-thirsk.jpg */,
+				EA3093A22027E30700C55B8F /* image5-pattern.png */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9A38572024BA1400E7C8E7 /* glad.c in Sources */,
 				EA9A34B82023B72F00E7C8E7 /* main.cpp in Sources */,
+				EA9A38542024BA1400E7C8E7 /* texture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					"$(PROJECT_DIR)/graphics_assig_2_1/middleware/glfw/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					"$(PROJECT_DIR)/graphics_assig_2_1/middleware/glfw/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
